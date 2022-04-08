@@ -15,5 +15,18 @@ def get_numbers(numbers):
         numbers.append(number)
 
 
-main()
+def main_2():
+    usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye', 'swei45', 'BaseInterpreterInterface', 'BaseStdIn', 'Command', 'ExecState', 'InteractiveConsole', 'InterpreterInterface', 'StartServer', 'bob']
+    username = input("Username: ")
+    verify_username(username, usernames)
 
+
+def verify_username(username, usernames):
+    if username in usernames:
+        print("Access granted")
+    else:
+        print("Access denied")
+
+
+main()
+main_2()
