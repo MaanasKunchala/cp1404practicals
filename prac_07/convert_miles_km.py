@@ -9,8 +9,11 @@ class ConvertMilesToKm(App):
         return self.root
 
     def handle_conversion(self, value):
-        result = float(value) * 1.61
-        self.root.ids.output_label.text = str(result)
+        try:
+            result = float(value) * 1.61
+            self.root.ids.output_label.text = str(result)
+        except ValueError:
+            self.root.ids.output_label.text = '0.0'
 
     def handle_increment(self, value, increment):
         result = float(value) + increment
