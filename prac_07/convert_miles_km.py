@@ -19,9 +19,12 @@ class ConvertMilesToKm(App):
         try:
             result = float(value) + increment
             self.root.ids.input_number.text = str(result)
+            self.handle_conversion(result)
         except ValueError:
             result = 0 + increment
             self.root.ids.input_number.text = str(result)
+            self.handle_conversion(result)
+
 
 ConvertMilesToKm().run()
 
