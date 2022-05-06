@@ -7,5 +7,8 @@ class DynamicLabels(App):
         super().__init__(**kwargs)
         names = ["Cat", "Dog", "Dinosaur"]
 
-
+    def build(self):
+        self.title = "Dynamic Labels"
+        self.root = Builder.load_file('dynamic_widgets.kv')
+        return self.root
 
