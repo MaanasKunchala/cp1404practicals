@@ -1,6 +1,8 @@
 from kivy.app import App
 from kivy.app import Builder
 
+MILE_TO_KILOMETER = 1.61
+
 
 class ConvertMilesToKm(App):
     def build(self):
@@ -10,7 +12,7 @@ class ConvertMilesToKm(App):
 
     def handle_conversion(self, value):
         try:
-            result = float(value) * 1.61
+            result = float(value) * MILE_TO_KILOMETER
             self.root.ids.output_label.text = str(result)
         except ValueError:
             self.root.ids.output_label.text = '0.0'
