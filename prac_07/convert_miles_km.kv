@@ -11,9 +11,11 @@ BoxLayout:
             Button:
                 text: 'Down'
     Button:
-        text: 'Convert m to km'
+        text: 'Convert mi to km'
+        on_press: app.handle_conversion(input_number.text)
     Label:
         text: 'test'
+        id: output_label
         color: (1, 1, 0, 1)
 
 
