@@ -12,6 +12,11 @@ class ConvertMilesToKm(App):
         result = float(value) * 1.61
         self.root.ids.output_label.text = str(result)
 
+    def handle_increment(self, value, increment):
+        result = float(value) + increment
+        value = str(result)
+
+
 
 ConvertMilesToKm().run()
 
