@@ -9,5 +9,5 @@ print(f"my_car reliability - {my_car.reliability}")
 
 # Testing - drive()
 print(my_car)
-my_car.drive(100)
+print(f"Distance driven: {my_car.drive(100)}")
 print(my_car)
