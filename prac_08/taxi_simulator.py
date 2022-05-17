@@ -49,5 +49,9 @@ def main():
             print("q)uit, c)hoose taxi, d)rive")
             option = input(">>> ").lower()
 
+    print(f"Total trip cost: ${bill:.2f}")
+    print("Taxis are now:")
+    for i, taxi in enumerate(taxis):
+        print(f"{i} - {taxi}")
 
 main()
