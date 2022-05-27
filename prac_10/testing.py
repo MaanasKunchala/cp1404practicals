@@ -68,3 +68,20 @@ doctest.testmod()
 # and one more you decide (one that is valid!)
 # test this and watch the tests fail
 # then write the body of the function so that the tests pass
+
+
+def convert_phrase_to_sentence(phrase):
+    """
+    >>> convert_phrase_to_sentence('hello')
+    'Hello.'
+    >>> convert_phrase_to_sentence('It is an ex parrot.')
+    'It is an ex parrot.'
+    >>> convert_phrase_to_sentence('welcome everyone')
+    'Welcome everyone.'
+    """
+    if phrase[-1] == '.':
+        dot = ''
+    else:
+        dot = '.'
+    sentence = phrase[0].upper() + phrase[1:] + dot
+    return sentence
